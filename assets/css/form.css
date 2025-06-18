@@ -1,0 +1,97 @@
+/* Contact Form */
+.wpcf7-form {
+    padding: 10px;
+}
+
+.wpcf7-form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+.wpcf7-form-control {
+    width: 100%;
+    padding: 9px 12px;
+    /* margin-top: 5px; */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.wpcf7-form-control:focus {
+    border-color: var(--e-global-color-primary);
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 0 2px rgba(var(--e-global-color-primary-rgb), 0.2);
+}
+
+.wpcf7-text,
+.wpcf7-email,
+.wpcf7-textarea {
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.wpcf7-textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.wpcf7-submit {
+    background-color: var(--e-global-color-primary);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+}
+
+.wpcf7-submit:hover {
+    background-color: rgba(var(--e-global-color-primary-rgb), 0.9);
+}
+
+.wpcf7-spinner {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.wpcf7-spinner::before {
+    border-color: var(--e-global-color-primary);
+}
+
+.wpcf7-not-valid-tip {
+    color: #dc3232;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.wpcf7-response-output {
+    padding: 15px;
+    margin: 20px 0 0;
+    border-radius: 4px;
+}
+
+form > p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Newsletter Form */
+.newsletter form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px; /* spacing between elements */
+}
+.newsletter input[type="submit"]{
+  background-color: var(--e-global-color-primary) !important;
+  color: #fff !important;
+ 
+}

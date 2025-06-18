@@ -1,0 +1,97 @@
+/* Team Members Grid - Base Styles */
+.team-members-grid {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Columns Classes */
+.team-members-grid.columns-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.team-members-grid.columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.team-members-grid.columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.team-members-grid.columns-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.team-members-grid.columns-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/* Team Member Card Base Styles */
+.team-member-card {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.team-member-image {
+    overflow: hidden;
+    text-align: center;
+}
+
+.team-member-image img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.team-member-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member-social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.team-member-social a i {
+    font-size: 20px;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .team-members-grid.columns-4,
+    .team-members-grid.columns-6 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .team-members-grid.columns-3,
+    .team-members-grid.columns-4,
+    .team-members-grid.columns-6 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .team-members-grid.columns-2,
+    .team-members-grid.columns-3,
+    .team-members-grid.columns-4,
+    .team-members-grid.columns-6 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
