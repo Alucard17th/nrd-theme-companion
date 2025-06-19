@@ -20,7 +20,7 @@ function mtc_enqueue_plugin_styles() {
         wp_register_script(
 		'mtc-testimonials-swiper',
 		plugin_dir_url( __FILE__ ) . 'assets/js/testimonials.js',
-		[ 'elementor-frontend', 'swiper' ], // dependencies!
+		// [ 'elementor-frontend', 'swiper' ], // dependencies!
 		'1.0.0',
 		true
 	);
